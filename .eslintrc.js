@@ -15,7 +15,8 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "off",
         "eol-last": "warn",
         "no-multiple-empty-lines": "warn",
-        "semi": "warn"
+        "semi": "warn",
+        "@typescript-eslint/interface-name-prefix": "off"
     },
     settings: {
         react: {
