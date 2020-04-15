@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React from "react";
 import * as ReactDOM from "react-dom";
 
@@ -23,7 +25,6 @@ import * as ReactDOM from "react-dom";
  * 
  * NOTE: Do not confuse `components` with `elements`. `elements` are what `component` is made of, and `component` is more broad concept.
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const helloWorldElement = <h1>Hello, world!</h1>;
 
 /**

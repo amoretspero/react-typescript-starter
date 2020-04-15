@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React from "react";
 
 /**
@@ -5,7 +7,6 @@ import React from "react";
  * 
  * JSX(TSX) is a syntax extension to Javascript(Typescript)
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const tsxElement = <h1>Hello, world!</h1>;
 
 const name = "Josh Perez";
@@ -20,7 +21,6 @@ const name = "Josh Perez";
  * 
  * TSX can prevent injection attacks, by used with curly braces.
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const nameElement = <h1>Hello, {name}</h1>;
 
 /**
@@ -109,11 +109,9 @@ export function IntroducingTsx() {
 /**
  * Element created with TSX.
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const elementWithTsx = <h1 className="greeting">Hello, world!</h1>;
 
 /**
  * Element created with `createElement` function.
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const elementWithCreateElement = React.createElement("h1", { className: "greeting" }, "Hello, world!");
