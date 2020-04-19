@@ -14,7 +14,7 @@ function activateLasers() {
  * There are some syntax differences.
  * 
  * - React events are named using camelCase, rather than lowercase.
- * - With JSX you pass a function as the event handler, rather than a string.
+ * - With TSX you pass a function as the event handler, rather than a string.
  * 
  * For example, the HTML:
  * ```html
@@ -23,7 +23,7 @@ function activateLasers() {
  * </button>
  * ```
  * 
- * is slightly different in React as below `buttonElement`.
+ * is slightly different in React, like below `buttonElement`.
  */
 const buttonElement =
     <button onClick={activateLasers}>
@@ -42,7 +42,7 @@ const buttonElement =
  * ```
  * 
  * In react, this could instead be like below element.
- * (Here, arrow function is used, but plain function will also do the job.)
+ * (Here, arrow function is used, but plain function is also fine.)
  */
 const anchorElement =
     <a href="#" onClick={(e) => { e.preventDefault(); console.log("The link was clicked."); }}>
@@ -71,7 +71,7 @@ function handleAnchorTagClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
  * @param state State of component that will be using this handler.
  * @param setState Set-state function for `state`.
  */
-function handleToggleClickGen(state: boolean, setState: React.Dispatch<React.SetStateAction<boolean>>) {
+function handleToggleClickGenerator(state: boolean, setState: React.Dispatch<React.SetStateAction<boolean>>) {
     return () => {
         setState(!state);
     };
@@ -83,7 +83,7 @@ function handleToggleClickGen(state: boolean, setState: React.Dispatch<React.Set
  * @param setState Set-state function for `state`.
  * @param prevState Additional argument.
  */
-function handleToggleClickWithArgsGen(state: boolean, setState: React.Dispatch<React.SetStateAction<boolean>>, prevState: boolean) {
+function handleToggleClickWithArgsGenerator(state: boolean, setState: React.Dispatch<React.SetStateAction<boolean>>, prevState: boolean) {
     return () => {
         console.log(`Previous state: ${prevState}`);
         setState(!state);
@@ -133,7 +133,7 @@ export function Toggle() {
             <button onClick={(e) => { handleToggleClickWithArgs(isToggleOn); }}>
                 {isToggleOn ? "ON" : "OFF"}
             </button>
-            <button onClick={handleToggleClickWithArgsGen(isToggleOn, setIsToggleOn, isToggleOn)}>
+            <button onClick={handleToggleClickWithArgsGenerator(isToggleOn, setIsToggleOn, isToggleOn)}>
                 {isToggleOn ? "ON" : "OFF"}
             </button>
             <button onClick={(e) => { handleToggleClickWithArgs(isToggleOn); }}>

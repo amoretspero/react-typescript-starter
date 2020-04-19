@@ -10,6 +10,7 @@ import { wrappedNaiveTick } from "RenderingElements";
 import { Comment } from "ComponentsAndProps";
 import { Clock, MultipleClock } from "StateAndLifecycle";
 import { Toggle } from "HandlingEvents";
+import { Mailbox, Page } from "ConditionalRendering";
 
 //#region react-dom-render
 
@@ -86,9 +87,21 @@ import { Toggle } from "HandlingEvents";
 
 //#region handling-events
 
+// ReactDOM.render(
+//     <div>
+//         <Toggle />
+//     </div>,
+//     document.getElementById("root"),
+// );
+
+//#endregion
+
+//#region conditional-rendering
+
 ReactDOM.render(
     <div>
-        <Toggle />
+        <Mailbox unreadMessages={["hello", "world"]} />
+        <Page />
     </div>,
     document.getElementById("root"),
 );
