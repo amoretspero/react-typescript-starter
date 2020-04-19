@@ -1,4 +1,4 @@
-/** eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import React, { useState } from "react";
 
@@ -87,7 +87,7 @@ function handleToggleClickWithArgsGen(state: boolean, setState: React.Dispatch<R
     return () => {
         console.log(`Previous state: ${prevState}`);
         setState(!state);
-    }
+    };
 }
 
 /**
@@ -140,5 +140,5 @@ export function Toggle() {
                 {isToggleOn ? "ON" : "OFF"}
             </button>
         </div>
-    )
+    );
 }
