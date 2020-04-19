@@ -9,6 +9,7 @@ import { IntroducingTsx } from "IntroducingTsx";
 import { wrappedNaiveTick } from "RenderingElements";
 import { Comment } from "ComponentsAndProps";
 import { Clock, MultipleClock } from "StateAndLifecycle";
+import { Toggle } from "HandlingEvents";
 
 //#region react-dom-render
 
@@ -63,20 +64,31 @@ import { Clock, MultipleClock } from "StateAndLifecycle";
 
 //#region state-and-lifecycle
 
+// ReactDOM.render(
+//     <div>
+//         <div>
+//             <h2>The first single clock:</h2>
+//             <Clock />
+//         </div>
+//         <div>
+//             <h2>The second single clock:</h2>
+//             <Clock />
+//         </div>
+//         <div>
+//             <h2>The multiple(3) clocks:</h2>
+//             <MultipleClock />
+//         </div>
+//     </div>,
+//     document.getElementById("root"),
+// );
+
+//#endregion
+
+//#region handling-events
+
 ReactDOM.render(
     <div>
-        <div>
-            <h2>The first single clock:</h2>
-            <Clock />
-        </div>
-        <div>
-            <h2>The second single clock:</h2>
-            <Clock />
-        </div>
-        <div>
-            <h2>The multiple(3) clocks:</h2>
-            <MultipleClock />
-        </div>
+        <Toggle />
     </div>,
     document.getElementById("root"),
 );
