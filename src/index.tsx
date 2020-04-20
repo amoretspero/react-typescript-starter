@@ -11,6 +11,7 @@ import { Comment } from "ComponentsAndProps";
 import { Clock, MultipleClock } from "StateAndLifecycle";
 import { Toggle } from "HandlingEvents";
 import { Mailbox, Page } from "ConditionalRendering";
+import { Blog, NumberList } from "ListsAndKeys";
 
 //#region react-dom-render
 
@@ -98,10 +99,30 @@ import { Mailbox, Page } from "ConditionalRendering";
 
 //#region conditional-rendering
 
+// ReactDOM.render(
+//     <div>
+//         <Mailbox unreadMessages={["hello", "world"]} />
+//         <Page />
+//     </div>,
+//     document.getElementById("root"),
+// );
+
+//#endregion
+
+//#region lists-and-keys
+
+const posts = [
+    { id: 1, title: "Hello World", content: "Welcome to learning React!" },
+    { id: 2, title: "Installation", content: "You can install React from npm." }
+];
+
+const numbers = [1, 2, 3, 4, 5];
+
 ReactDOM.render(
     <div>
-        <Mailbox unreadMessages={["hello", "world"]} />
-        <Page />
+        <Blog posts={posts} />
+        <hr />
+        <NumberList numbers={numbers} />
     </div>,
     document.getElementById("root"),
 );
