@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import React, { useState, useEffect } from "react";
+/** React - Main Concepts - #8: List and Keys */
+
+import React from "react";
 
 /**
  * Numbers from 1 to 5.

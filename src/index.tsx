@@ -27,6 +27,8 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 
 //#region helloworld
 
+/** React - Main Concepts - #1: Hello World */
+
 // ReactDOM.render(
 //     <HelloWorld />,
 //     document.getElementById("root"),
@@ -35,6 +37,8 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 //#endregion
 
 //#region introducing-tsx
+
+/** React - Main Concepts - #2: Introducing TSX */
 
 // ReactDOM.render(
 //     <IntroducingTsx />,
@@ -45,11 +49,15 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 
 //#region rendering-element
 
+/** React - Main Concepts - #3: Rendering Elements */
+
 // wrappedNaiveTick();
 
 //#endregion
 
 //#region components-and-props
+
+/** React - Main Concepts - #4: Components and Props */
 
 // ReactDOM.render(
 //     <Comment
@@ -66,6 +74,8 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 //#endregion
 
 //#region state-and-lifecycle
+
+/** React - Main Concepts - #5: State and Lifecycle */
 
 // ReactDOM.render(
 //     <div>
@@ -89,6 +99,8 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 
 //#region handling-events
 
+/** React - Main Concepts - #6: Handling Events */
+
 // ReactDOM.render(
 //     <div>
 //         <Toggle />
@@ -99,6 +111,8 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 //#endregion
 
 //#region conditional-rendering
+
+/** React - Main Concepts - #7: Conditional Rendering */
 
 // ReactDOM.render(
 //     <div>
@@ -111,6 +125,8 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 //#endregion
 
 //#region lists-and-keys
+
+/** React - Main Concepts - #8: Lists and Keys */
 
 // const posts = [
 //     { id: 1, title: "Hello World", content: "Welcome to learning React!" },
@@ -130,7 +146,9 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 
 //#endregion
 
-//#region 
+//#region forms
+
+/** React - Main Concepts - #9: Forms */
 
 ReactDOM.render(
     <div>

@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
+/** React - Main Concepts - #7: Conditional Rendering */
+
 import React, { useState } from "react";
 
 /**

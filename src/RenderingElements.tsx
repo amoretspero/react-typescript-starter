@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
+/** React - Main Concepts - #3: Rendering Elements */
+
 import React from "react";
 import * as ReactDOM from "react-dom";
 

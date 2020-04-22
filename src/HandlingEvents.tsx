@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
+/** React - Main Concepts - #6: Handling Events */
+
 import React, { useState } from "react";
 
 /**

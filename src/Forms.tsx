@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import React, { useState, useEffect } from "react";
+/** React - Main Concepts - #9: Forms */
+
+import React, { useState } from "react";
 import * as ReactDOM from "react-dom";
 
 /**
