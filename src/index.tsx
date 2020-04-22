@@ -5,13 +5,14 @@ import * as ReactDOM from "react-dom";
 
 import { App } from "./App";
 import { HelloWorld } from "./HelloWorld";
-import { IntroducingTsx } from "IntroducingTsx";
-import { wrappedNaiveTick } from "RenderingElements";
-import { Comment } from "ComponentsAndProps";
-import { Clock, MultipleClock } from "StateAndLifecycle";
-import { Toggle } from "HandlingEvents";
-import { Mailbox, Page } from "ConditionalRendering";
+import { IntroducingTsx } from "./IntroducingTsx";
+import { wrappedNaiveTick } from "./RenderingElements";
+import { Comment } from "./ComponentsAndProps";
+import { Clock, MultipleClock } from "./StateAndLifecycle";
+import { Toggle } from "./HandlingEvents";
+import { Mailbox, Page } from "./ConditionalRendering";
 import { Blog, NumberList } from "ListsAndKeys";
+import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } from "./Forms";
 
 //#region react-dom-render
 
@@ -111,23 +112,41 @@ import { Blog, NumberList } from "ListsAndKeys";
 
 //#region lists-and-keys
 
-const posts = [
-    { id: 1, title: "Hello World", content: "Welcome to learning React!" },
-    { id: 2, title: "Installation", content: "You can install React from npm." }
-];
+// const posts = [
+//     { id: 1, title: "Hello World", content: "Welcome to learning React!" },
+//     { id: 2, title: "Installation", content: "You can install React from npm." }
+// ];
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
+
+// ReactDOM.render(
+//     <div>
+//         <Blog posts={posts} />
+//         <hr />
+//         <NumberList numbers={numbers} />
+//     </div>,
+//     document.getElementById("root"),
+// );
+
+//#endregion
+
+//#region 
 
 ReactDOM.render(
     <div>
-        <Blog posts={posts} />
+        <NameForm />
         <hr />
-        <NumberList numbers={numbers} />
+        <EssayForm />
+        <hr />
+        <FlavorForm />
+        <hr />
+        <Reservation />
+        <hr />
+        <div id="delayed-editabel-input-region"></div>
     </div>,
     document.getElementById("root"),
 );
 
-//#endregion
+delayedEditableInput("delayed-editabel-input-region");
 
-//#endregion
-
+//#endregion    
