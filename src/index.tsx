@@ -13,6 +13,7 @@ import { Toggle } from "./HandlingEvents";
 import { Mailbox, Page } from "./ConditionalRendering";
 import { Blog, NumberList } from "ListsAndKeys";
 import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } from "./Forms";
+import { Calculator } from "./LiftingStateUp";
 
 //#region react-dom-render
 
@@ -150,21 +151,32 @@ import { EssayForm, FlavorForm, NameForm, Reservation, delayedEditableInput } fr
 
 /** React - Main Concepts - #9: Forms */
 
+// ReactDOM.render(
+//     <div>
+//         <NameForm />
+//         <hr />
+//         <EssayForm />
+//         <hr />
+//         <FlavorForm />
+//         <hr />
+//         <Reservation />
+//         <hr />
+//         <div id="delayed-editabel-input-region"></div>
+//     </div>,
+//     document.getElementById("root"),
+// );
+
+// delayedEditableInput("delayed-editabel-input-region");
+
+//#endregion    
+
+//#region lifting-state-up
+
+/** React - Main Concepts - #10: Lifting State Up */
+
 ReactDOM.render(
-    <div>
-        <NameForm />
-        <hr />
-        <EssayForm />
-        <hr />
-        <FlavorForm />
-        <hr />
-        <Reservation />
-        <hr />
-        <div id="delayed-editabel-input-region"></div>
-    </div>,
+    <Calculator />,
     document.getElementById("root"),
 );
 
-delayedEditableInput("delayed-editabel-input-region");
-
-//#endregion    
+//#endregion
